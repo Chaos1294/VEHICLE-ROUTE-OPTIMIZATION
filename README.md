@@ -22,7 +22,7 @@ vehicles. This will be accomplished by designing a solution using advanced optim
 ## DATA
 
 The data is in two csv files. The 'JobExecutionTime.csv' has information of estimated duration in minutes at a particular stop ID. 
-The 'TravelTime.csv' consists of traǀel time between two stop ID's. The two files are merged to carry out the 
+The 'TravelTime.csv' consists of travel time between two stop ID's. The two files are merged to carry out the 
 preprocessing steps.
 For missing values in travel time, the maximum value was assigned.
 
