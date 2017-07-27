@@ -1,6 +1,6 @@
-#VEHICLE ROUTE OPTIMIZATION
+# VEHICLE ROUTE OPTIMIZATION
 
-##ABSTRACT
+## ABSTRACT
 
 The agenda of this project is to design an efficient Genetic Algorithm to solve the Vehicle Routing 
 Problem. Many versions of the Vehicle Routing Problem have been described. The Vehicle Routing 
@@ -19,14 +19,14 @@ Spring-Cleaning currently has an in house software that collects and maintains t
 decides vehicle routes. You need to work with Spring-Cleaning to develop an optimal routing solution for their 
 vehicles. This will be accomplished by designing a solution using advanced optimization techniques.
 
-##DATA
+## DATA
 
 The data is in two csv files. The first one has information estimated duration in minutes at a particular stop ID. 
 The other file consists of traǀel time between two stop ID's. The two files are merged to carry out the 
 preprocessing steps.
 For missing values in travel time, the maximum value was assigned.
 
-##CONSTRAINTS
+## CONSTRAINTS
 
 Spring-Cleaning strives to service requests by dynamically scheduling their resources under various
 constraints. You will be given data with routes scheduled on one day for each of their depots. Every
@@ -38,7 +38,7 @@ The constraints include a set of vehicles with limits on total route duration, n
 serviced and with no repetition of service. The objective is to minimize travel time for set of customers 
 without being tardy or exceeding number of customers or service time at customer in a particular route.
 
-##GENETIC ALGORITHM 
+## GENETIC ALGORITHM 
 
 The Vehicle Routing Problem (VRP) dates back to the end of the fifties of the last century when Dantzig
 and Ramser set the mathematical programming formulation and algorithmic approach to solve the problem of 
@@ -63,13 +63,13 @@ More details are given by Reeves, for example. The starting point for any GA is 
 solution or population member. Typically, this will be in the form of a string or chromosome. Individual 
 positions within each chromosome are referred to as genes.
 
-##STEPS FOLLOWED
+## STEPS FOLLOWED
 
-###Selection
+### Selection
 First we select a proportion of the existing population to breed a new generation. The selection is
 done on a fitness-based approach where fitter individuals are more likely to breed then others.
 
-###Reproduction
+### Reproduction
 During the reproduction phase the next generation is created using the two basic methods, crossover
 and mutation. For every new child a pair of parents is selected from which the child inherits its properties. 
 In the crossover process genotype is taken from both parents and combined to create a new child. 
@@ -79,10 +79,10 @@ This helps to further explore the solution space and ensure, or preserve, geneti
 of mutation is generally associated with low probability. A proper balance between genetic quality and diversity
 is therefore required within the population in order to support efficient search.
 
-###Implementation
+### Implementation
 R statistical programming language was used to implement the system. 
 
-##ADVANTAGES OF GENETIC ALGORITHMS
+## ADVANTAGES OF GENETIC ALGORITHMS
 
  It can solve every optimization problem which can be described with the chromosome encoding.
 
@@ -99,7 +99,7 @@ of mathematics.
 
  Genetic algorithms are easily transferred to existing simulations and models.
 
-##LIMITATIONS OF GENETIC ALGORITHMS
+## LIMITATIONS OF GENETIC ALGORITHMS
 
  Certain optimization problems (they are called variant problems) cannot be solved by means of genetic algorithms.
 This occurs due to poorly known fitness functions which generate bad chromosome blocks in spite of the fact that
